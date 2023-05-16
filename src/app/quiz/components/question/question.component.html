@@ -5,7 +5,6 @@
 			<h3>{{this.helperText}}</h3>
 			<input type="text" [(ngModel)]="code" #ctrl="ngModel" (input)="onInputChange(code)" required
 				[ngClass]="{'correct-answer': isCorrectAnswer(code), 'wrong-answer': !isCorrectAnswer(code)}">
-			<p>{{correctAnswer}}</p>
 		</div>
 		<ng-template #choice>
 			<app-quiz-answer *ngFor="let answer of answers$ | async; let i = index" [answerText]="answer" [index]="i"
