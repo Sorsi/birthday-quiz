@@ -14,6 +14,7 @@ export class QuizComponent {
   isDisabled$: Observable<boolean>;
 
   eventsSubject: Subject<void> = new Subject<void>();
+  imgPath: string = './assets/images/meeting-point.png';
 
   emitEventToChild() {
     this.eventsSubject.next();

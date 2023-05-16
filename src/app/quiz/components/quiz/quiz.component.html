@@ -1,13 +1,14 @@
 <div class="quiz">
+	<h5>IT SUPPORT: +36 (70) 3318 405</h5>
 	<div *ngIf="(showResults$ | async)">
 		<div class="results">
 			<div class="congratulations">
 				Gratulálok
 			</div>
 			<div class="results-info">
-				<div>Sikeresen végigvitted a quiz első felét.</div>
-				<div>{{correctAnswerCount$ | async}} kérdésből {{ questionsLength$ | async}} kérdésre adtál helyes
-					választ.</div>
+				<div>Sikeresen elkészítetted a szülinapi tortádat.</div>
+				<div>Most pedig fogd a pezsgőt a mélyhűtőből és siess hozzánk, már várunk!</div>
+				<img src="{{imgPath}}" alt="Meeting Point">
 			</div>
 			<button class="next-button" (click)="restart()">Restart</button>
 		</div>
