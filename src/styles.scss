@@ -10,6 +10,10 @@ body {
 	width: 975px;
 	margin: 0 auto;
 	margin-top: 100px;
+
+	@media screen and (max-width: 975px) {
+		width: 100%;
+	}
   }
   
   .question {
